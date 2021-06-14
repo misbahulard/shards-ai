@@ -1,0 +1,22 @@
+{
+    "index_patterns": [
+        "you don't need to define this, this will replaced by index defined in the config"
+    ],
+    "template": {
+        "settings": {
+            "index": {
+                "codec": "best_compression",
+                "routing": {
+                    "allocation": {
+                        "require": {
+                            "type": "hot"
+                        }
+                    }
+                },
+                "number_of_shards": "1",
+                "number_of_replicas": "1"
+            }
+        }
+    },
+    "priority": 1000
+}

@@ -1,0 +1,18 @@
+log:
+  debug: false
+  file:
+    enable: false
+    path: static/log/default.log
+
+templates:
+  - path: static/templates/example.json
+    indices: 
+      - logstash*
+    priority: 1000
+
+elasticsearch:
+  hosts:
+    - https://localhost:9200
+  username: admin
+  password: admin
+  ssl_certificate_verification: true

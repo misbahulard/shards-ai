@@ -1,7 +1,7 @@
 package main
 
-import "fmt"
+import "github.com/misbahulard/shards-ai/cmd"
 
 func main() {
-	fmt.Println("Welcome to shards ai for elasticsearch")
+	cmd.Execute()
 }
